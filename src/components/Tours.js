@@ -2,7 +2,7 @@
 import React from 'react'
 import Card from './Card'
 
-const Tours = ({tours}) => {
+const Tours = ({tours, removeTour}) => {
   return (
     <div>
         <div><h2>Paln a Trip</h2></div>
@@ -10,7 +10,7 @@ const Tours = ({tours}) => {
         <div>
             {
                 tours.map((tour)=>{
-                    return <Card  {...tour} />
+                    return <Card  {...tour} removeTour={removeTour} />
                 })
             }
         </div>

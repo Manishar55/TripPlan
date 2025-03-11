@@ -6,11 +6,16 @@ import Tours from "./components/Tours";
 
 const App = () => {
 
-  const [tours, setTours] = useState(data)
+  const [tours, setTours] = useState(data);
+
+  function removeTour(id){
+    const newTours=tours.filter(tour=>tour.id!==id);
+    setTours(newTours);
+  }
 
   return(
     <div>
-       <Tours tours={tours}/>
+       <Tours tours={tours} removeTour={removeTour}/>
     </div>
   )
 };
