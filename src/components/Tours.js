@@ -4,10 +4,10 @@ import Card from './Card'
 
 const Tours = ({tours, removeTour}) => {
   return (
-    <div>
-        <div><h2>Paln a Trip</h2></div>
+    <div className='container'>
+        <div><h2 className='title'>Paln a Trip</h2></div>
 
-        <div>
+        <div className='cards'>
             {
                 tours.map((tour)=>{
                     return <Card  {...tour} removeTour={removeTour} />
