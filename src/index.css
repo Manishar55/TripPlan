@@ -6,8 +6,7 @@
 
 body{
     min-height: 100vh;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .title{
@@ -42,11 +41,55 @@ body{
     flex-direction: column;
     border-radius: 10px;
     align-items: center;
-    box-shadow: gba(0, 0, 0, 0.24) 0px 8px 3px;
+    box-shadow: rgb(0, 0, 0, 0.24) 0px 8px 3px;
 }
 
 .image{
     width: 380px;
     aspect-ratio: 1/1;
     object-fit: cover;
+}
+
+.tour-info{
+    margin: 20px 5px;
+}
+
+
+.tour-price{
+    color: rgb(20, 167, 167);
+    font-size: 1.3rem;
+}
+
+.tour-name{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.read-more{
+   color: rgb(73, 114, 248);
+   cursor: pointer;
+}
+
+.btn-red{
+    /* margin: 2rem; */
+    padding: 10px 30px;
+    background-color: rgba(243, 62, 89, 0.256);
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-top: 10px;
+    font-weight: bold;
+    border: 1px solid rgb(143, 4, 4);
+}
+.btn-red:hover{
+    background-color: rgba(248, 30, 63, 0.402) ;
+    transition: all 0.2s;
+}
+
+.card:hover{
+
+    /* transform: scale(1.1); */
+    box-shadow: rgb(0, 0, 0, 0.24) 2px 3px 9px 2px;
+    transition: all 0.3s;
+    
 }

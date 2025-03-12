@@ -5,7 +5,7 @@ import Card from './Card'
 const Tours = ({tours, removeTour}) => {
   return (
     <div className='container'>
-        <div><h2 className='title'>Paln a Trip</h2></div>
+        <div><h2 className='title'>Plan a Trip</h2></div>
 
         <div className='cards'>
             {
